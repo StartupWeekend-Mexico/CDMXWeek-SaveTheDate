@@ -1,0 +1,79 @@
+/* label color */
+   .input-field label {
+     color: white;
+   }
+   /* label underline focus color */
+   .input-field input[type=email] {
+     border-bottom: 1px solid white !important;
+     box-shadow: 0 1px 0 0 white !important;
+   }
+   /* label focus color */
+   .input-field input[type=email]:focus + label {
+     color: white !important;
+   }
+   /* label underline focus color */
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid white !important;
+     box-shadow: 0 1px 0 0 white !important;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: white;
+   }
+
+.input-center {
+    float: none !important;
+}
+
+.banner{
+  background-color: #f57c00;
+}
+
+.no-margin{
+  margin:0px;
+}
+
+.btn-banner{
+  color: black
+}
+
+@media only screen and (min-width: 601px){
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+      height: 104px;
+      line-height: 104px;
+  }
+
+  .logo {
+    padding-top: 20px;
+    padding-left: 80px;
+  }
+
+  .banner{
+    height: 600px;
+  }
+
+  .banner-strip{
+    padding-top: 40px;
+    color: white;
+  }
+
+  .banner-strip > p {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  #counter {
+    font-size: 36px;
+    margin: 0px !important;
+  }
+}
