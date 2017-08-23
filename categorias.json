@@ -1,32 +1,52 @@
 {
   "Emprendimiento101": {
-      "desc": "Descripcion de Emprendimiento 101"
+      "desc": "Descripcion de Emprendimiento 101",
+      "titulo": "Emprendimiento 101",
+      "img" : "./-img/categorias/isla-emprendimiento.png"
   },
   "Inversion": {
-      "desc": "Descripcion de Inversion y Legal"
+      "desc": "Descripcion de Inversion y Legal",
+      "titulo": "Inversión y Legal",
+      "img" : "./-img/categorias/isla-inversion.png"
   },
   "Tecnologia": {
-      "desc": "Descripcion de Tecnologia"
+      "desc": "Descripcion de Tecnologia",
+      "titulo": "Tecnología",
+      "img" : "./-img/categorias/isla-tecnologia.png"
   },
   "Fintech": {
-      "desc": "Descripcion de Fintech"
+      "desc": "Descripcion de Fintech",
+      "titulo": "Fintech",
+      "img" : "./-img/categorias/isla-fintech.png"
   },
   "UX/UI": {
-      "desc": "Descripcion de UX/UI"
+      "desc": "Descripcion de UX/UI",
+      "titulo": "UX/UI",
+      "img" : "./-img/categorias/isla-uxui.png"
   },
   "Social": {
-      "desc": "Descripcion de Innovacion Social"
+      "desc": "Descripcion de Innovacion Social",
+      "titulo": "Innovación Social",
+      "img" : "./-img/categorias/isla-social.png"
   },
   "Videojuegos": {
-      "desc": "Descripcion de Videojuegos"
+      "desc": "Descripcion de Videojuegos",
+      "titulo": "Videojuegos/VR",
+      "img" : "./-img/categorias/isla-games.png"
   },
   "AI": {
-    "desc": "Descripcion de AI"
+    "desc": "Descripcion de AI",
+    "titulo": "AI",
+    "img" : "./-img/categorias/isla-ai.png"
   },
   "Health": {
-    "desc": "Descripcion de Health"
+    "desc": "Descripcion de Health",
+    "titulo": "Health",
+    "img" : "./-img/categorias/isla-health.png"
   },
   "IoT": {
-    "desc": "Descripcion de IoT"
+    "desc": "Descripcion de IoT",
+    "titulo": "Makers/IoT",
+    "img" : "./-img/categorias/thumbnail.png"
   }
 }

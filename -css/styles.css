@@ -8,6 +8,18 @@
   cursor: pointer;
 }
 
+.img-special{
+  border-right: solid #eeeeee;
+}
+
+.body-special {
+    background-color: #f5f5f5;
+}
+
+.modal-special {
+  margin:0px;
+}
+
 .side-nav li.active {
     background-color: #f57c00;
 }
@@ -263,6 +275,13 @@ and (min-width : 768px) {
     width: 95%;
     max-width: 1100px;
   }
+  .modal {
+    width: 75%;
+  }
+  .card .card-action {
+    padding: 16px 8px;
+    font-size: 13px;
+  }
 }
 
 /* Desktops and laptops ----------- */
@@ -283,6 +302,9 @@ and (min-width : 1224px) {
   }
   .card .card-action {
     padding: 16px 14px;
+  }
+  .modal {
+      width: 65%;
   }
 }
 
