@@ -95,7 +95,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">Inversión y Legal</a>
+              <a onclick="showModal('Inversion')" class="categoria-title">Inversión y Legal</a>
             </div>
           </div>
         </div>
@@ -106,7 +106,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">Tecnología</a>
+              <a onclick="showModal('Tecnologia')" class="categoria-title">Tecnología</a>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">Fintech</a>
+              <a onclick="showModal('Fintech')" class="categoria-title">Fintech</a>
             </div>
           </div>
         </div>
@@ -128,7 +128,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">UX/UI</a>
+              <a onclick="showModal('UX/UI')" class="categoria-title">UX/UI</a>
             </div>
           </div>
         </div>
@@ -140,7 +140,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">Innovación Social</a>
+              <a onclick="showModal('Social')" class="categoria-title">Innovación Social</a>
             </div>
           </div>
         </div>
@@ -151,7 +151,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">Videojuegos/VR</a>
+              <a onclick="showModal('Videojuegos')" class="categoria-title">Videojuegos/VR</a>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">AI</a>
+              <a onclick="showModal('AI')" class="categoria-title">AI</a>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a class="categoria-title">Health</a>
+              <a onclick="showModal('Health')" class="categoria-title">Health</a>
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Makers/IoT</a>
+              <a onclick="showModal('IoT')" class="categoria-title">Makers/IoT</a>
             </div>
           </div>
         </div>
@@ -301,23 +301,39 @@
     </div>
   </footer>
 
+  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+ <!-- Modal Structure -->
+ <div id="modal" class="modal">
+   <div class="modal-content">
+     <h4>Modal Header</h4>
+     <p>A bunch of text</p>
+   </div>
+   <div class="modal-footer">
+     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+   </div>
+ </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="-js/_main-dist.js"></script>
   <script>
+  var jsonCategorias;
+  $.getJSON("categorias.json", function(json) {
+    jsonCategorias = json;
+  });
+
   function showModal(categoria){
     console.log(categoria);
-    $.getJSON("categorias.json", function(json) {
-      console.log(json); // this will show the info it in firebug console
-      var desc = json.categoria.desc;
-      console.log(desc);
-    });
+    var desc = jsonCategorias[categoria].desc;
+    console.log(desc);
+    $('#modal').modal('open');
   }
 
   $( document ).ready(function(){
     $('.materialboxed').materialbox();
     $('.slider').slider();
     $(".button-collapse").sideNav();
-
+    $('.modal').modal();
     // Set the date we're counting down to
     var countDownDate = new Date("Nov 6, 2017 9:00:00").getTime();
 

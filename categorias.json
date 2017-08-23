@@ -2,7 +2,31 @@
   "Emprendimiento101": {
       "desc": "Descripcion de Emprendimiento 101"
   },
-  "Inversion&Legal": {
+  "Inversion": {
       "desc": "Descripcion de Inversion y Legal"
+  },
+  "Tecnologia": {
+      "desc": "Descripcion de Tecnologia"
+  },
+  "Fintech": {
+      "desc": "Descripcion de Fintech"
+  },
+  "UX/UI": {
+      "desc": "Descripcion de UX/UI"
+  },
+  "Social": {
+      "desc": "Descripcion de Innovacion Social"
+  },
+  "Videojuegos": {
+      "desc": "Descripcion de Videojuegos"
+  },
+  "AI": {
+    "desc": "Descripcion de AI"
+  },
+  "Health": {
+    "desc": "Descripcion de Health"
+  },
+  "IoT": {
+    "desc": "Descripcion de IoT"
   }
 }

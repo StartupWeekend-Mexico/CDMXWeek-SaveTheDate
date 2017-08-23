@@ -4,6 +4,10 @@
   font-variant: normal;
 }
 
+.categoria-title{
+  cursor: pointer;
+}
+
 .side-nav li.active {
     background-color: #f57c00;
 }
