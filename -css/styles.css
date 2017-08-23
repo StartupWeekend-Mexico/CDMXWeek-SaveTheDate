@@ -3,6 +3,40 @@
   font-style: normal;
   font-variant: normal;
 }
+
+.side-nav li.active {
+    background-color: #f57c00;
+}
+
+.side-nav li:hover {
+  background-color: #212121;
+}
+
+.side-nav li>a, .side-nav li>a>i {
+  color: white !important;
+}
+
+.side-nav .divider {
+  margin: 0px;
+}
+
+.nav {
+  line-height: 104px;
+}
+
+#mobile-demo {
+  background-image: url("../-img/bg-menu.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size:contain;
+}
+
+.side-nav-logo{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
 /* label color */
 .input-field label {
   color: white;
@@ -144,21 +178,19 @@ footer{
   margin: 0px !important;
 }
 
-@media only screen and (min-width: 601px){
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 104px;
-    line-height: 104px;
-  }
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 104px;
+  line-height: 104px;
+}
 
-  .logo {
-    padding-top: 20px;
-    padding-left: 80px;
-  }
+.logo {
+  padding-top: 20px;
+  padding-left: 80px;
+}
 
-  .banner-strip > p {
-    font-size: 20px;
-    margin: 5px;
-  }
+.banner-strip > p {
+  font-size: 20px;
+  margin: 5px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
