@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster+Two" />
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
@@ -31,21 +32,27 @@
           <li class=""><a href="#">Comunidades</a></li>
           <li class=""><a href="#">Contacto</a></li>
         </ul>
-        <ul class="side-nav" id="mobile-demo">
+        <ul class="side-nav black" id="mobile-demo">
+          <a class="right red-text" onclick="$('.button-collapse').sideNav('hide');" href="#"><i class="material-icons">close</i></a>
+          <li class=""><img border="0" alt="SW-Week" src="./-img/Mexico_city_white_2_xxs.png" class="side-nav-logo"></li>
           <li class="active"><a href="#">Week</a></li>
+          <div class="divider grey darken-4"></div>
           <li class=""><a href="#">Temáticas</a></li>
+          <div class="divider grey darken-4"></div>
           <li class=""><a href="#">Comunidades</a></li>
+          <div class="divider grey darken-4"></div>
           <li class=""><a href="#">Contacto</a></li>
+          <div class="divider grey darken-4"></div>
         </ul>
       </div>
     </nav>
 
     <div class="banner">
-      <div class="banner-strip center-align">
-        <h1 class="no-margin">Más que un evento, es una ¡Celebración!</h1>
-        <p>Un evento de una semana, diseñado para conectar a las personas que conforman
-          y tienen <br/> interés en ser parte del emprendimiento de base tecnológica en México.
-        </p>
+      <div class="banner-strip center-align container row">
+        <h1 class="no-margin banner-special">¡Viva el emprendimiento y la tecnología!</h1>
+          <p class="col s12 m10 offset-m1 l6 offset-l3">Startup Week es una semana con actividades de las comunidades de emprendimiento y tecnología para celebrar el
+            ecosistema de la Ciudad de México. Participa, aprende y conéctate con tu comunidad.
+          </p>
         <div class="row">
           <form class="col s12">
             <div class="input-field inline input-center col s4">
@@ -59,7 +66,7 @@
           </form>
         </div>
         <p>Solo Faltan:</p>
-        <p id="counter"></p>
+        <p id="counter" class="banner-counter"></p>
       </div>
     </div>
 
@@ -77,7 +84,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Emprendimiento 101</a>
+              <a href="#" class="categoria-title">Emprendimiento 101</a>
             </div>
           </div>
         </div>
@@ -88,7 +95,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Inversión y Legal</a>
+              <a href="#" class="categoria-title">Inversión y Legal</a>
             </div>
           </div>
         </div>
@@ -99,7 +106,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Tecnología</a>
+              <a href="#" class="categoria-title">Tecnología</a>
             </div>
           </div>
         </div>
@@ -110,7 +117,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Fintech</a>
+              <a href="#" class="categoria-title">Fintech</a>
             </div>
           </div>
         </div>
@@ -121,18 +128,19 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">UX/UI</a>
+              <a href="#" class="categoria-title">UX/UI</a>
             </div>
           </div>
         </div>
-
+      </div>
+      <div class="row container">
         <div class="col s12 m6 l3 xl2 offset-xl1">
           <div class="card">
             <div class="card-image">
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Innovación Social</a>
+              <a href="#" class="categoria-title">Innovación Social</a>
             </div>
           </div>
         </div>
@@ -143,7 +151,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Videojuegos/VR</a>
+              <a href="#" class="categoria-title">Videojuegos/VR</a>
             </div>
           </div>
         </div>
@@ -154,7 +162,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">AI</a>
+              <a href="#" class="categoria-title">AI</a>
             </div>
           </div>
         </div>
@@ -165,7 +173,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Health</a>
+              <a href="#" class="categoria-title">Health</a>
             </div>
           </div>
         </div>
@@ -176,7 +184,7 @@
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#">Track 1</a>
+              <a href="#" class="categoria-title">Makers/IoT</a>
             </div>
           </div>
         </div>
@@ -267,7 +275,30 @@
   </section>
 
   <footer class="black">
+    <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3 xl4 offset-xl4">
+          <div class="card black center-align">
+            <div class="card-content white-text">
+              <img border="0" alt="SW-Week" src="./-img/Mexico_city_white_2_xs.png">
+              <p class="footer-p">Un evento de comunidad para comunidades. Nos encantaria platicar
+                contigo si eres parte de una comunidad o quieres sumarte a la red de coworkings
+                que nos ayudarán a hacer realidad este mega evento. Contáctanos por Facebook.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="row">
+      <div class="col s12 center-align">
+          <a><img border="0" alt="SW-Week" src="./-img/sm-facebook.png" class="smButton"></a>
+          <a><img border="0" alt="SW-Week" src="./-img/sm-twitter.png" class="smButton"></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m6 offset-m1">
 
+      </div>
+    </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -277,34 +308,33 @@
     $('.materialboxed').materialbox();
     $('.slider').slider();
     $(".button-collapse").sideNav();
+
     // Set the date we're counting down to
     var countDownDate = new Date("Nov 6, 2017 9:00:00").getTime();
 
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
+    function countDown(){
       // Get todays date and time
       var now = new Date().getTime();
-
       // Find the distance between now an the count down date
-      var distance = countDownDate - now;
-
+      var distance = countDownDate - now
       // Time calculations for days, hours, minutes and seconds
       var days = Math.floor(distance / (1000 * 60 * 60 * 24));
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
       // Display the result in the element with id="demo"
       document.getElementById("counter").innerHTML = days + "d " + hours + "h "
       + minutes + "m " + seconds + "s ";
-
       // If the count down is finished, write some text
       if (distance < 0) {
         clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("count").innerHTML = "El evento";
       }
-    }, 1000);
+    }
+
+    // Update the count down every 1 second
+    countDown();
+    var x = setInterval(countDown, 1000);
 
     window.fbAsyncInit = function() {
       FB.init({

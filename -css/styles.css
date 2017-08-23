@@ -1,42 +1,85 @@
+.banner-special {
+  font-family: Lobster Two;
+  font-style: normal;
+  font-variant: normal;
+}
+
+.side-nav li.active {
+    background-color: #f57c00;
+}
+
+.side-nav li:hover {
+  background-color: #212121;
+}
+
+.side-nav li>a, .side-nav li>a>i {
+  color: white !important;
+}
+
+.side-nav .divider {
+  margin: 0px;
+}
+
+.nav {
+  line-height: 104px;
+}
+
+#mobile-demo {
+  background-image: url("../-img/bg-menu.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size:contain;
+}
+
+.side-nav-logo{
+  padding-top: 40px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
 /* label color */
-   .input-field label {
-     color: white;
-   }
-   /* label underline focus color */
-   .input-field input[type=email] {
-     border-bottom: 1px solid white !important;
-     box-shadow: 0 1px 0 0 white !important;
-   }
-   /* label focus color */
-   .input-field input[type=email]:focus + label {
-     color: white !important;
-   }
-   /* label underline focus color */
-   .input-field input[type=email]:focus {
-     border-bottom: 1px solid white !important;
-     box-shadow: 0 1px 0 0 white !important;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid #000;
-     box-shadow: 0 1px 0 0 #000;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: white;
-   }
+.input-field label {
+  color: white;
+}
+/* label underline focus color */
+.input-field input[type=email] {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+/* label focus color */
+.input-field input[type=email]:focus + label {
+  color: white !important;
+}
+/* label underline focus color */
+.input-field input[type=email]:focus {
+  border-bottom: 1px solid white !important;
+  box-shadow: 0 1px 0 0 white !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: white;
+}
 
 .input-center {
-    float: none !important;
+  float: none !important;
 }
 
 .banner{
   background-color: #f57c00;
+  background-image: url("../-img/ciudad-CDMX.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size:contain;
 }
 
 .no-margin{
@@ -60,18 +103,18 @@
 }
 
 .section-title {
-    padding-top: 60px;
-    padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .section-subtitle {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 img.center {
-    display: block;
-    margin: 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .slider {
@@ -96,49 +139,163 @@ img.center {
 }
 
 footer{
-  height: 600px;
+  padding-top: 40px;
+  color: white;
+  height: 950px;
+  background-image: url("../-img/ciudad-CDMX-dark.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
-@media only screen and (min-width: 601px){
-  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-      height: 104px;
-      line-height: 104px;
-  }
+.footer-p {
+  padding-top: 40px;
+}
 
-  .logo {
-    padding-top: 20px;
-    padding-left: 80px;
-  }
+.smButton{
+  padding-left: 20px;
+  padding-right:20px;
+}
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: black;
+  margin-right: 0px;
+  font-weight: bold;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+  color: #f57c00;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.banner-strip{
+  padding-top: 50px;
+  color: white;
+}
+
+.banner-counter {
+  font-size: 36px !important;
+  margin: 0px !important;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 104px;
+  line-height: 104px;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-left: 80px;
+}
+
+.banner-strip > p {
+  font-size: 20px;
+  margin: 5px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .banner{
+
+  }
+  .banner-special {
+    font-size: 34px;
+  }
+  .banner-counter{
+    font-size: 34px !important;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  .banner{
+    height: 600px;
+  }
+  .banner-special {
+    font-size: 38px;
+  }
+  .banner-counter{
+    font-size: 38px !important;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .banner{
+    height: 700px;
+  }
+  .banner-special {
+    font-size: 42px;
+  }
+  .banner-counter{
+    font-size: 42px !important;
+  }
+  .container {
+    width: 95%;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-width : 768px) {
+  .banner{
+    height: 750px;
+  }
+  .banner-special {
+    font-size: 46px;
+  }
+  .banner-counter{
+    font-size: 46px !important;
+  }
+  .container {
+    width: 95%;
+    max-width: 1100px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
   .banner{
     height: 800px;
   }
-
-  .banner-strip{
-    padding-top: 50px;
-    color: white;
+  .banner-special {
+    font-size: 50px;
   }
-
-  .banner-strip > p {
-    font-size: 20px;
-    margin: 5px;
+  .banner-counter{
+    font-size: 50px !important;
   }
-
-  #counter {
-    font-size: 36px;
-    margin: 0px !important;
+  .container {
+    width: 100%;
+    max-width: 1800px;
+  }
+  .card .card-action {
+    padding: 16px 14px;
   }
 }
 
-@media only screen and (min-width : 1824px) {
-  .container {
-    max-width: 1650px;
-    width: 80%;
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  .banner{
+    height: 950px;
   }
-}
-
-@media only screen and (min-width: 993px){
+  .banner-special {
+    font-size: 60px;
+  }
+  .banner-counter{
+    font-size: 60px !important;
+  }
   .container {
-      width: 90%;
+    max-width: 2400px;
+    width: 100%;
   }
 }
