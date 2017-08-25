@@ -4,6 +4,17 @@
   font-variant: normal;
 }
 
+.btn-facebook {
+  background-color: #3b5998;
+}
+
+.btn-facebook:focus {
+  background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+  background-color: #23355b;
+}
 .categoria-title{
   cursor: pointer;
 }
@@ -209,6 +220,18 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   margin: 5px;
 }
 
+#mc_embed_signup .button {
+  background-color: black !important;
+}
+
+#mc_embed_signup .button:hover {
+    background-color: white !important;
+    color: black
+}
+#mc_embed_signup .button:focus {
+    outline: none;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 320px)
@@ -263,7 +286,7 @@ and (max-device-width : 1024px) {
 @media only screen
 and (min-width : 768px) {
   .banner{
-    height: 750px;
+    height: 620px;
   }
   .banner-special {
     font-size: 46px;
@@ -288,7 +311,7 @@ and (min-width : 768px) {
 @media only screen
 and (min-width : 1224px) {
   .banner{
-    height: 800px;
+    height: 700px;
   }
   .banner-special {
     font-size: 50px;
@@ -312,7 +335,7 @@ and (min-width : 1224px) {
 @media only screen
 and (min-width : 1824px) {
   .banner{
-    height: 950px;
+    height: 800px;
   }
   .banner-special {
     font-size: 60px;

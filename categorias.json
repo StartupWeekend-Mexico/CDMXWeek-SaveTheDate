@@ -1,51 +1,51 @@
 {
   "Emprendimiento101": {
-      "desc": "Descripcion de Emprendimiento 101",
+      "desc": "Tengo una idea y quiero hacerla realidad pero no sé por dónde empezar. Las actividades de esta vertical estarán enfocadas en inspirar a los emprendedores para que den el primer paso en su proyecto. Además de darles los consejos básicos a la hora de iniciar un emprendimiento.",
       "titulo": "Emprendimiento 101",
       "img" : "./-img/categorias/isla-emprendimiento.png"
   },
   "Inversion": {
-      "desc": "Descripcion de Inversion y Legal",
+      "desc": "Todo lo que un emprendedor debe saber sobre la valuación de su empresa, su figura legal y las diferentes etapas de levantamiento de capital. Incluso cómo tratar a los VCs.",
       "titulo": "Inversión y Legal",
       "img" : "./-img/categorias/isla-inversion.png"
   },
   "Tecnologia": {
-      "desc": "Descripcion de Tecnologia",
+      "desc": "Todo sobre nuevas tecnologías, buenas prácticas y los usos de distintos lenguajes de programación.",
       "titulo": "Tecnología",
       "img" : "./-img/categorias/isla-tecnologia.png"
   },
   "Fintech": {
-      "desc": "Descripcion de Fintech",
+      "desc": "La tecnología al servicio de la construcción de herramientas que promueven la inclusión financiera o la innovación en los servicios financieros.",
       "titulo": "Fintech",
       "img" : "./-img/categorias/isla-fintech.png"
   },
   "UX/UI": {
-      "desc": "Descripcion de UX/UI",
+      "desc": "La construcción de cualquier producto, debe tener como enfoque principal la perspectiva del cliente. Sobre todo en ambientes digitales. Esta vertical nos ayudará a fortalecer buenas prácticas y ver los productos digitales de maneras diferentes.",
       "titulo": "UX/UI",
       "img" : "./-img/categorias/isla-uxui.png"
   },
   "Social": {
-      "desc": "Descripcion de Innovacion Social",
+      "desc": "Un llamado a todos esos emprendedores que buscan resolver las necesidades sociales y ambientales con un producto o servicio que genera impacto a través de un enfoque sistemático.",
       "titulo": "Innovación Social",
       "img" : "./-img/categorias/isla-social.png"
   },
   "Videojuegos": {
-      "desc": "Descripcion de Videojuegos",
+      "desc": "La frontera entre la realidad y la fantasía cada día se desdibuja más con la tecnología. Aprende de las novedades en la creación de videojuegos y los alcances de la realidad virtual para múltiples aplicaciones  además del entretenimiento.",
       "titulo": "Videojuegos/VR",
       "img" : "./-img/categorias/isla-games.png"
   },
   "AI": {
-    "desc": "Descripcion de AI",
+    "desc": "Vertical sobre el uso más controversial de la tecnología, la inteligencia artificial. ¿A favor o en contra de la humanidad?",
     "titulo": "AI",
     "img" : "./-img/categorias/isla-ai.png"
   },
   "Health": {
-    "desc": "Descripcion de Health",
+    "desc": "En esta vertical se explorará la innovación en el campo de la salud y la investigación.",
     "titulo": "Health",
     "img" : "./-img/categorias/isla-health.png"
   },
   "IoT": {
-    "desc": "Descripcion de IoT",
+    "desc": "Dos temas igual de relevantes, la cultura de CREAR tecnología hasta donde la imaginación lo permita y por otro hacer que los objetos cobren vida a través de la conectividad.",
     "titulo": "Makers/IoT",
     "img" : "./-img/categorias/thumbnail.png"
   }
