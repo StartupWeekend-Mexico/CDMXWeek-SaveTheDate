@@ -4,6 +4,26 @@
   font-variant: normal;
 }
 
+.logo-frame {
+    height: 160px;      /* equals max image height */
+    white-space: nowrap; /* this is required unless you put the helper span closely near the img */
+    padding: 20px !important;
+}
+
+.logo-helper {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.comunidad-logo {
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
 .btn-facebook {
   background-color: #3b5998;
 }
