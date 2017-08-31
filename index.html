@@ -16,8 +16,14 @@
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster+Two" />
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <link rel="stylesheet" href="-css/styles.css">
+  <!-- Begin MailChimp Signup Form -->
+  <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  	/*#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}*/
+  	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+  	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+  </style>
 </head>
 
 <body>
@@ -54,16 +60,16 @@
             ecosistema de la Ciudad de México. Participa, aprende y conéctate con tu comunidad.
           </p>
         <div class="row">
-          <form class="col s12">
-            <div class="input-field inline input-center col s4">
-              <i class="material-icons prefix">email</i>
-              <input id="icon_prefix" type="email" class="validate">
-              <label for="icon_prefix">E-mail</label>
+          <div id="mc_embed_signup">
+            <form action="//startupweek.us16.list-manage.com/subscribe/post?u=a3d7ae6e2494470b7e8e1b73b&amp;id=ebdd6319fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate col s10 offset-s1" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+            	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a3d7ae6e2494470b7e8e1b73b_ebdd6319fb" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribirme" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
             </div>
-            <button class="btn waves-effect waves-light white btn-banner" type="submit" name="action">Enviar
-              <i class="material-icons right">send</i>
-            </button>
-          </form>
         </div>
         <p>Solo Faltan:</p>
         <p id="counter" class="banner-counter"></p>
@@ -78,113 +84,113 @@
       <p>Un evento de una semana, diseñado para conectar a las personas que conforman y tienen interés en <br/> ser parte del emprendimiento de base tecnológica en Ciudad de México.</p>
     </div>
     <div class="row container">
-        <div class="col s12 m6 l3 xl2 offset-xl1">
+        <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-emprendimiento.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Emprendimiento 101</a>
+              <a class="categoria-title" onclick="showModal('Emprendimiento101')">Emprendimiento 101</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-inversion.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Inversión y Legal</a>
+              <a onclick="showModal('Inversion')" class="categoria-title">Inversión y Legal</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-tecnologia.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Tecnología</a>
+              <a onclick="showModal('Tecnologia')" class="categoria-title">Tecnología</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-fintech.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Fintech</a>
+              <a onclick="showModal('Fintech')" class="categoria-title">Fintech</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-uxui.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">UX/UI</a>
+              <a onclick="showModal('UX/UI')" class="categoria-title">UX/UI</a>
             </div>
           </div>
         </div>
       </div>
       <div class="row container">
-        <div class="col s12 m6 l3 xl2 offset-xl1">
+        <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-social.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Innovación Social</a>
+              <a onclick="showModal('Social')" class="categoria-title">Innovación Social</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-games.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Videojuegos/VR</a>
+              <a onclick="showModal('Videojuegos')" class="categoria-title">Videojuegos/VR</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-ai.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">AI</a>
+              <a onclick="showModal('AI')" class="categoria-title">AI</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
-              <img src="./-img/categorias/thumbnail.png">
+              <img src="./-img/categorias/isla-health.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Health</a>
+              <a onclick="showModal('Health')" class="categoria-title">Health</a>
             </div>
           </div>
         </div>
 
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <div class="card">
             <div class="card-image">
               <img src="./-img/categorias/thumbnail.png">
             </div>
             <div class="card-action center-align">
-              <a href="#" class="categoria-title">Makers/IoT</a>
+              <a onclick="showModal('IoT')" class="categoria-title">Makers/IoT</a>
             </div>
           </div>
         </div>
@@ -200,7 +206,7 @@
     </div>
 
     <div class="center-align">
-        <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Placeholder</a>
+        <a class="waves-effect waves-light btn btn-facebook" href="https://m.me/SWCentro" target="_blank"><i class="material-icons left">message</i>Contáctanos</a>
     </div>
 
     <!-- <div class="fb-messengermessageus"
@@ -214,44 +220,68 @@
     </div>
 
     <div class="row container">
-        <div class="col s12 m6 l3 xl2 offset-xl1">
-          <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
+        <div class="col s8 offset-s2 m3 l2 offset-l1 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/500.png"></a>
         </div>
-        <div class="col s12 m6 l3 xl2">
-          <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/Ronin.png"></a>
         </div>
-        <div class="col s12 m6 l3 xl2">
-          <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/EBC.png"></a>
         </div>
-        <div class="col s12 m6 l3 xl2">
-          <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/Imprezona.png"></a>
         </div>
-        <div class="col s12 m6 l3 xl2">
-          <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/IZA.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 offset-l1 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/Platzi.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/Techstars.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/Catapulta.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/SWCDMX.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/Posible.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 offset-l1 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/StartupHGO.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/HF.png"></a>
+        </div>
+        <div class="col s8 offset-s2 m3 l2 logo-frame">
+          <a href="#!" class="logo-helper"><img class="comunidad-logo center" src="-img/comunidades/PuntoLab.png"></a>
         </div>
     </div>
 
-    <div class="center-align section-subtitle container">
+    <!-- <div class="center-align section-subtitle container">
       <h5>Coworkings</h5>
     </div>
 
     <div class="row container">
-        <div class="col s12 m6 l3 xl2 offset-xl1">
+        <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
           <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
         </div>
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
         </div>
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
         </div>
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
         </div>
-        <div class="col s12 m6 l3 xl2">
+        <div class="col s12 m6 l2 xl2">
           <img class="materialboxed center" src="./-img/comunidades/thumbnail.png">
         </div>
-    </div>
+    </div> -->
   </section>
 
   <section id="headlines" class="orange darken-2">
@@ -260,14 +290,14 @@
         <li>
           <img></img>
           <div class="caption center-align">
-            <h3>Una semana diseñada para conectar a <br/> innovación y emprendimiento</h3>
+            <h3>Una semana para inspirar, aprender y conectar</h3>
             <!-- <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5> -->
           </div>
         </li>
         <li>
           <div class="caption center-align">
-            <h3>This is our big Tagline!</h3>
-            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <h3>Actividades de emprendimiento y tecnología durante una semana.</h3>
+            <h5 class="light grey-text text-lighten-3">Para emprendedores, inversionistas, programadores, etc.</h5>
           </div>
         </li>
       </ul>
@@ -290,8 +320,8 @@
       </div>
     <div class="row">
       <div class="col s12 center-align">
-          <a><img border="0" alt="SW-Week" src="./-img/sm-facebook.png" class="smButton"></a>
-          <a><img border="0" alt="SW-Week" src="./-img/sm-twitter.png" class="smButton"></a>
+          <a href="https://www.facebook.com/CDMXStartupWeek/" target="_blank"><img border="0" alt="SW-Week" src="./-img/sm-facebook.png" class="smButton"></a>
+          <a href="https://twitter.com/CDMXStartupWeek" target="_blank"><img border="0" alt="SW-Week" src="./-img/sm-twitter.png" class="smButton"></a>
       </div>
     </div>
     <div class="row">
@@ -301,14 +331,51 @@
     </div>
   </footer>
 
+ <!-- Modal Structure -->
+ <div id="modal" class="modal">
+    <div id="modal-card" class="card horizontal modal-special">
+      <div class="card-image img-special">
+        <img id="modal-image">
+      </div>
+      <div class="card-stacked body-special">
+        <div class="card-content">
+          <!-- <div class="row"> -->
+            <a href="#!" class="right red-text modal-action modal-close btn-flat"><i class="material-icons">close</i></a>
+          <!-- </div> -->
+          <h4 id="modal-title"></h4>
+          <p id="modal-desc">I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+      </div>
+    </div>
+ </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="-js/_main-dist.js"></script>
   <script>
+  var jsonCategorias;
+  $.getJSON("categorias.json", function(json) {
+    jsonCategorias = json;
+  });
+
+  function showModal(categoria){
+    console.log(categoria);
+    var desc = jsonCategorias[categoria].desc;
+    console.log(desc);
+    document.getElementById("modal-title").innerHTML = jsonCategorias[categoria].titulo;
+    document.getElementById("modal-desc").innerHTML = jsonCategorias[categoria].desc;
+    $("#modal-image").attr("src", jsonCategorias[categoria].img);
+    document.getElementById("modal-card").classList.remove("horizontal");
+    if($(document).width()>=1000){
+      document.getElementById("modal-card").classList.add("horizontal");
+    }
+    $('#modal').modal('open');
+  }
+
   $( document ).ready(function(){
     $('.materialboxed').materialbox();
     $('.slider').slider();
     $(".button-collapse").sideNav();
-
+    $('.modal').modal();
     // Set the date we're counting down to
     var countDownDate = new Date("Nov 6, 2017 9:00:00").getTime();
 
