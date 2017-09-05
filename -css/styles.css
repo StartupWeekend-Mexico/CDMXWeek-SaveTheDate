@@ -231,6 +231,7 @@ footer {
   background-image: url("../-img/ciudad-CDMX-dark.png");
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
 }
 
 .footer-p {
@@ -292,16 +293,28 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   outline: none;
 }
 
+.headline-title {
+
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
   .banner {}
   .banner-special {
     font-size: 34px;
   }
   .banner-counter {
     font-size: 34px !important;
+  }
+
+  .headline-title {
+    font-size:32px;
+  }
+
+  .headline-title-w-subheading {
+    font-size:22px;
   }
 }
 
@@ -310,12 +323,28 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 @media only screen and (min-width: 321px) {
   .logo {
-    height: 67px;
+    height: 55px;
     margin: 5px auto 0;
+    padding-left: 0;
   }
+
+  .footer-logo{
+    height: 40px;
+  }
+
+  .slides {
+    height: 300px !important;
+    background-color: #f57c00 !important;
+  }
+
   .banner {
     height: 600px;
   }
+
+  footer{
+      height: 500px;
+  }
+
   .banner-special {
     font-size: 38px;
   }
@@ -334,6 +363,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner {
     height: 700px;
   }
+  footer{
+      height: 700px;
+  }
   .banner-special {
     font-size: 42px;
   }
@@ -351,6 +383,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (min-width: 768px) {
   .banner {
     height: 620px;
+  }
+  footer{
+      height: 620px;
   }
   .banner-special {
     font-size: 46px;
@@ -378,6 +413,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner {
     height: 700px;
   }
+  footer{
+      height:700px;
+  }
   .banner-special {
     font-size: 50px;
   }
@@ -402,6 +440,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 @media only screen and (min-width: 1824px) {
   .banner {
     height: 800px;
+  }
+  footer{
+      height: 800px;
   }
   .banner-special {
     font-size: 60px;
