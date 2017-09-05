@@ -1,5 +1,5 @@
 .banner-special {
-  font-family: Lobster Two;
+  font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-variant: normal;
 }
@@ -265,6 +265,10 @@ footer {
   margin: 0px !important;
 }
 
+.nav-wrapper {
+  padding: 0 80px;
+}
+
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   height: 104px;
   line-height: 104px;
@@ -293,9 +297,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   outline: none;
 }
 
-.headline-title {
-
-}
+.headline-title {}
 
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -308,13 +310,11 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner-counter {
     font-size: 34px !important;
   }
-
   .headline-title {
-    font-size:32px;
+    font-size: 32px;
   }
-
   .headline-title-w-subheading {
-    font-size:22px;
+    font-size: 22px;
   }
 }
 
@@ -323,28 +323,23 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 @media only screen and (min-width: 321px) {
   .logo {
-    height: 55px;
+    height: 66px;
     margin: 5px auto 0;
     padding-left: 0;
   }
-
-  .footer-logo{
+  .footer-logo {
     height: 40px;
   }
-
   .slides {
     height: 300px !important;
     background-color: #f57c00 !important;
   }
-
   .banner {
     height: 600px;
   }
-
-  footer{
-      height: 500px;
+  footer {
+    height: 500px;
   }
-
   .banner-special {
     font-size: 38px;
   }
@@ -363,8 +358,8 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner {
     height: 700px;
   }
-  footer{
-      height: 700px;
+  footer {
+    height: 700px;
   }
   .banner-special {
     font-size: 42px;
@@ -384,8 +379,8 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner {
     height: 620px;
   }
-  footer{
-      height: 620px;
+  footer {
+    height: 620px;
   }
   .banner-special {
     font-size: 46px;
@@ -413,11 +408,13 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner {
     height: 700px;
   }
-  footer{
-      height:700px;
+  footer {
+    height: 700px;
   }
   .banner-special {
     font-size: 50px;
+    margin: 0 auto;
+    margin-bottom: 10px;
   }
   .banner-counter {
     font-size: 50px !important;
@@ -441,8 +438,8 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   .banner {
     height: 800px;
   }
-  footer{
-      height: 800px;
+  footer {
+    height: 800px;
   }
   .banner-special {
     font-size: 60px;
