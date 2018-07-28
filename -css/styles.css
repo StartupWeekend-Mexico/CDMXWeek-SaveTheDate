@@ -2,6 +2,8 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-variant: normal;
+  font-size: 50px;
+  font-weight: 800;
 }
 
 .logo-frame {
@@ -29,10 +31,8 @@
 .btn-facebook {
   height: 45px;
   padding-top: 5px;
-  background-color: #448aff;
+  background-color: #fff;
   border-radius: 100px;
-  -webkit-box-shadow: 0px 0px 7px rgba(27, 127, 204, 0.8);
-  box-shadow: 0px 0px 7px rgba(27, 127, 204, 0.8);
   text-decoration: none;
 }
 
@@ -280,8 +280,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 
 .banner-strip>p {
-  font-size: 20px;
+  font-size: 23px;
   margin: 5px;
+  margin-top: 31px;
 }
 
 #mc_embed_signup .button {
@@ -299,7 +300,100 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 .headline-title {}
 
+.banner-strip-desc p{
+  font-size: 23px;
+  margin: 5px;
+  margin-top: 31px;
+}
 
+.banner-strip-counter{
+  margin-top: 165px;
+  background: #fff;
+  color: #f57e38;
+  width: 181px;
+  font-size: 21px !important;
+  padding: 8px;
+  margin: 0 auto !important;
+  top: 289px;
+  padding: 0;
+  border-radius: 6px;
+  position: relative;
+}
+
+.banner-strip-counter p{
+    font-size: 21px;
+    margin: 5px;
+    margin-top: -110px;
+}
+.banner-strip-counter p:nth-child(1){
+  color: #000;
+  font-size: 12px;
+  padding-top: 9px;
+  text-transform: uppercase;
+  font-family: roboto;
+  margin-bottom: 1px;  
+}
+.banner-strip-counter p:nth-child(2){
+    font-size: 19px !important;
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+nav ul li.active{
+  border-bottom: 2px solid #fff;
+  max-height: 68px;
+  background: transparent;
+}
+
+.btn-facebook.waves-effect{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 5px 12px;
+    text-align: center;
+}
+
+.btn-facebook.waves-effect img{
+    padding: 0;
+    float: none;
+    margin-right: 0;
+}
+
+#organizers{
+  background: #f9fafb;
+  padding-bottom: 60px;
+}
+
+.organizers-list-wrapper{
+  text-align: center;
+}
+
+.organizer-box-item-info p:nth-child(1){
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: -14px;
+}
+
+.organizer-box-item-info p:nth-child(2){
+  margin-bottom: -2px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.organizer-box-item{
+    width: 17%;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(212, 212, 212, 0.31);
+    text-align: center;
+    padding: 24px;
+    margin: 5px 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.organizer-box-item img{
+    width: 66px;
+    height: 66px;
+    border-radius: 100%;
+}
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
