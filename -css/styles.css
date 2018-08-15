@@ -165,7 +165,7 @@
   background-image: url("../-img/ciudad-CDMX.png");
   background-repeat: no-repeat;
   background-position: bottom;
-  background-size: contain;
+  background-size: 155%;
 }
 
 .no-margin {
@@ -258,6 +258,54 @@ footer {
 .banner-strip {
   padding-top: 50px;
   color: white;
+  text-align: left;
+  padding-left: 5%;
+  width: 65%;
+}
+
+.pre-register-wrapper{
+  width: 31%;
+  vertical-align: top;
+}
+
+.pre-register-box{
+    background: #fff;
+    padding: 11px 15px;
+    border-radius: 4px;
+    min-height: 270px;
+    margin-top: 55px;
+}
+
+.pre-register-box h3{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a3842;
+    font-family: montserrat;
+}
+.pre-register-box input{
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid;
+    border-radius: 9px;
+    font-size: 14px;
+}
+.pre-register-box button{
+  background: #f57e38;
+  border: 0;
+  font-family: montserrat;
+  color: #fff;
+  letter-spacing: 0px;
+  margin-top: 14px;
+  padding: 8px 21px;
+  border-radius: 16px;
+  font-size: 13px;
+}
+.pre-register-box-bottom input:last-of-type{
+  margin-top: 11px;
+}
+.pre-register-box p{
+  font-size: 12px;
+  margin-top: -6px;
 }
 
 .banner-counter {
@@ -301,23 +349,34 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .headline-title {}
 
 .banner-strip-desc p{
-  font-size: 23px;
-  margin: 5px;
-  margin-top: 31px;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 19px;
+  margin-left: -10px !important;
 }
 
 .banner-strip-counter{
-  margin-top: 165px;
   background: #fff;
   color: #f57e38;
-  width: 181px;
-  font-size: 21px !important;
-  padding: 8px;
-  margin: 0 auto !important;
-  top: 289px;
+  width: 280px;
+  margin-top: 33px;
+  top: 56px;
+  margin-left: -8px;
   padding: 0;
-  border-radius: 6px;
+  border-radius: 35px;
   position: relative;
+}
+
+.banner-strip-counter h3{
+  font-size: 21px;
+  margin: 0;
+  line-height: 0;
+  position: relative;
+  bottom: 13px;
+  font-family: montserrat;
+  margin-left: 32px;
+  font-weight: bold;
+  color: #000;
 }
 
 .banner-strip-counter p{
@@ -334,9 +393,15 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   margin-bottom: 1px;  
 }
 .banner-strip-counter p:nth-child(2){
-    font-size: 19px !important;
-    font-weight: bold;
-    padding-bottom: 3px;
+  font-size: 14px !important;
+  padding-bottom: 3px;
+  color: #2a3842;
+  font-weight: 800;
+  font-family: montserrat;
+  margin-top: 6px;
+  position: relative;
+  margin-left: 31px;
+  bottom: 4px;
 }
 nav ul li.active{
   border-bottom: 2px solid #fff;
@@ -364,7 +429,9 @@ nav ul li.active{
 }
 
 .organizers-list-wrapper{
+  width: 85%;
   text-align: center;
+  margin: 0 auto;
 }
 
 .organizer-box-item-info p:nth-child(1){
@@ -380,20 +447,109 @@ nav ul li.active{
 }
 
 .organizer-box-item{
-    width: 17%;
+    width: 13%;
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(212, 212, 212, 0.31);
     text-align: center;
     padding: 24px;
-    margin: 5px 5px;
+    margin: 8px 11px;
     display: inline-block;
+    min-height: 219px;
     vertical-align: top;
+    border-radius: 93px;
+    max-width: 121px;
 }
 .organizer-box-item img{
     width: 66px;
     height: 66px;
     border-radius: 100%;
 }
+
+.communities-first-wrapper, .communities-second-wrapper, .communities-third-wrapper{
+    width: 28%;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: -webkit-baseline-middle;
+}
+
+#categorias .card .card-image img{
+    padding: 34px 30px;
+}
+#categorias{
+  text-align: center;
+}
+
+.communities-card-desc{
+  padding: 14px;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-family: 'montserrat';
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2a3842;
+  margin-top: 21px;
+  text-align: left;
+}
+
+#categorias .card-action {
+  text-align: left;
+  width: 260px;
+  height: 24px;
+  font-family: 'Montserrat';
+  padding-left: 14px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #2a3842;
+}
+
+.communities-card-footer div:nth-child(1){
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+  border-top: 1px solid #eee;
+}
+
+.communities-card-footer div:nth-child(2){
+  display: inline-block;
+  text-align: center;
+  width: 49%;
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.communities-card-footer div:nth-child(1) p:nth-child(1),
+.communities-card-footer div:nth-child(2) p:nth-child(1){
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2a3842;
+}
+
+.communities-card-footer div:nth-child(1) p:nth-child(2),
+.communities-card-footer div:nth-child(2) p:nth-child(2){
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #838b91;
+  margin-top: -17px;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -412,6 +568,9 @@ nav ul li.active{
   }
 }
 
+.inline{
+  display: inline-block;
+}
 
 /* Smartphones (landscape) ----------- */
 
@@ -477,7 +636,7 @@ nav ul li.active{
     height: 620px;
   }
   .banner-special {
-    font-size: 46px;
+    font-size: 38px;
   }
   .banner-counter {
     font-size: 46px !important;

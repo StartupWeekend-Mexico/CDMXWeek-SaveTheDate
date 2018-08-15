@@ -59,28 +59,66 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
           <li class=""><img border="0" alt="SW-Week" src="./-img/Mexico_city_white_2_xxs.png" class="side-nav-logo"></li>
           <li class="active"><a href="#">Week</a></li>
           <div class="divider grey darken-4"></div>
-          <li class=""><a href="#">Temáticas</a></li>
+          <li class=""><a href="#">10 categorias</a></li>
           <div class="divider grey darken-4"></div>
-          <li class=""><a href="#">Comunidades</a></li>
+          <li class=""><a href="#">Comunidades y sedes</a></li>
           <div class="divider grey darken-4"></div>
-          <li class=""><a href="#">Contacto</a></li>
+          <li class=""><a href="#">Patrocinadores y organizadores</a></li>
+          <div class="divider grey darken-4"></div>
+          <div class="divider grey darken-4"></div>
+          <li class=""><a href="#">Eventos</a></li>
           <div class="divider grey darken-4"></div>
         </ul>
       </div>
     </nav>
 
     <div class="banner">
-      <div class="banner-strip center-align container row">
+      <div class="banner-strip row inline">
         <div class="banner-strip-desc">
           <h1 class="no-margin banner-special">¡Viva el emprendimiento <br> y la tecnología!</h1>
-          <p class="col s12 m10 offset-m1 l6 offset-l3">Startup Week es una semana con actividades de las comunidades de emprendimiento y tecnología en CDMX.
+          <p class="col s12 m10 offset-m1 l12">Startup Week es una semana con actividades de las comunidades de emprendimiento y tecnología en CDMX.
           </p>
         </div>        
 
         <div class="banner-strip-counter">
-          <p>Solo Faltan:</p>
-          <p id="counter" class="banner-counter"></p>
-        </div>
+          <h3>
+            3 al 7 de septiembre
+          </h3>
+          <p>
+            Mira los eventos
+          </p>
+       </div>
+      </div>
+      <div class="pre-register-wrapper inline">
+          <div class="pre-register-box">
+            <div class="pre-register-box-top">
+              <h3>
+                Preregistro
+              </h3>
+              <p>
+                Cuando puedas regístrate al evento, te enviaremos un correo y serás el primero en enterarte.
+              </p>
+            </div>
+            <div class="pre-register-box-bottom">
+              <div>
+                <div>
+                  <label>
+                    <input placeholder="Nombre" type="" name="">
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="" name="" placeholder="Correo">
+                  </label>
+                </div>
+              </div>
+              <div>
+                <button>
+                  Me interesa
+                </button>
+              </div>
+            </div>
+          </div>
       </div>
     </div>
 
@@ -91,119 +129,326 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
       <h3>10 Categorías</h3>
       <p>Un evento de una semana, diseñado para conectar a las personas que conforman y tienen interés en <br/> ser parte del emprendimiento de base tecnológica en Ciudad de México.</p>
     </div>
-    <div class="row container">
-      <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-emprendimiento.png">
-          </div>
-          <div class="card-action center-align">
-            <a class="categoria-title" onclick="showModal('Emprendimiento101')">Emprendimiento 101</a>
+    <div class="container">
+      <div class="communities-first-wrapper">
+        <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-emprendimiento.png">
+            </div>
+            <div class="card-action center-align">
+              <a class="categoria-title" onclick="showModal('Emprendimiento101')">Emprendimiento 101</a>
+            </div>
+            <div class="communities-card-desc">
+              Aquí encontrarás contenido que necesitas para poder aventarte a emprender, inspírate y aprende de gente que la está armando en grande con sus proyectos.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-fintech.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Fintech')" class="categoria-title">Fintech</a>
+            </div>
+            <div class="communities-card-desc">
+              Interactúa con la gente que ha revolucionado los servicios financieros en México. Todavía falta mucho por hacer, es tu turno.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-games.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Videojuegos')" class="categoria-title">Videojuegos/VR</a>
+            </div>
+            <div class="communities-card-desc">
+              Aprende de las novedades en la creación de videojuegos y los alcances de la realidad virtual para múltiples aplicaciones además del entretenimiento.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>      
       </div>
+      <div class="communities-second-wrapper">
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-inversion.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Inversion')" class="categoria-title">Inteligencia artificial</a>
+            </div>
+            <div class="communities-card-desc">
+              Si no tienes ni idea de que se trata, no eres el único. Ven y descubre por qué tanto alboroto, qué es y qué aplicaciones tiene esta tecnología.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-inversion.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Inversion')" class="categoria-title">Inversión y Legal</a>
+            </div>
+            <div class="communities-card-desc">
+              Para enamorar a los inversionistas debes saber de temas como evaluación de una startup, figuras legales y las diferentes etapas de levantamiento de capital.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-uxui.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('UX/UI')" class="categoria-title">UX/UI</a>
+            </div>
+            <div class="communities-card-desc">
+              La construcción de cualquier producto, debe tener como enfoque principal la perspectiva del usuario, sobre todo en ambientes digitales.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/thumbnail.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('IoT')" class="categoria-title">Makers/IoT</a>
+            </div>
+            <div class="communities-card-desc">
+              Aquí se trata de crear tecnología hasta donde la imaginación te lo permita y lograr que los objetos cobren vida a través de la conectividad.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="communities-third-wrapper">      
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-tecnologia.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Tecnologia')" class="categoria-title">Tecnología</a>
+            </div>
+            <div class="communities-card-desc">
+              Tu también puedes aprender a programar, entérate sobre nuevas tecnologías, buenas prácticas y los usos de distintos lenguajes de programación.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-social.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Social')" class="categoria-title">Innovación Social</a>
+            </div>
+            <div class="communities-card-desc">
+              Descúbre cómo se pueden crear soluciones rentables que resuelvan los grandes problemas globales a través de modelos de alto impacto.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l2 xl2">
+          <div class="card">
+            <div class="card-image">
+              <img src="./-img/categorias/isla-health.png">
+            </div>
+            <div class="card-action center-align">
+              <a onclick="showModal('Health')" class="categoria-title">Health</a>
+            </div>
+            <div class="communities-card-desc">
+              En esta vertical se explorará la innovación en el campo de la salud y la investigación.
+            </div>
+            <div class="communities-card-footer">
+              <div>
+                <p>
+                  10
+                </p>
+                <p>
+                  Eventos
+                </p>
+              </div>
+              <div>
+                <p>
+                  50
+                </p>
+                <p>
+                  Asistentes
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-inversion.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('Inversion')" class="categoria-title">Inversión y Legal</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-tecnologia.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('Tecnologia')" class="categoria-title">Tecnología</a>
-          </div>
-        </div>
-      </div>
 
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-fintech.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('Fintech')" class="categoria-title">Fintech</a>
-          </div>
-        </div>
       </div>
-
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-uxui.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('UX/UI')" class="categoria-title">UX/UI</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row container">
-      <div class="col s12 m6 l2 offset-l1 xl2 offset-xl1">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-social.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('Social')" class="categoria-title">Innovación Social</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-games.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('Videojuegos')" class="categoria-title">Videojuegos/VR</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-ai.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('AI')" class="categoria-title">AI</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/isla-health.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('Health')" class="categoria-title">Health</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col s12 m6 l2 xl2">
-        <div class="card">
-          <div class="card-image">
-            <img src="./-img/categorias/thumbnail.png">
-          </div>
-          <div class="card-action center-align">
-            <a onclick="showModal('IoT')" class="categoria-title">Makers/IoT</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- </div> -->
     </div>
   </section>
   <section id="comunidades">
@@ -317,7 +562,7 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
     </div>
   </section>
 
-  <section id="organizers" style="display: none;">
+  <section id="organizers">
     <div class="center-align section-title container">
       <h3>Organizadores</h3>
       <p>Este evento se logra por el apoyo de voluntarios, y nos gustaría que los conocieras.</p>
@@ -325,135 +570,174 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
     <div class="organizers-list-wrapper">
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Adriana_R.jpg">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Adriana R
               </p>
               <p>
-                Empresa tal
+                Catapulta
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Israel_Navarrete.png">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Israel Navarrete
               </p>
               <p>
-                Empresa tal
+                Director de Desarrollo
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Miriam_Amaro.jpeg">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Miriam Amaro
               </p>
               <p>
-                Empresa tal
+                Directora SICDOS
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Jhonatan_Venegas.jpg">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Jhonatan Vanegas
               </p>
               <p>
-                Empresa tal
+                Technical Specialist, Chef®
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Rocio_Perez.jpg">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Rocío Pérez
               </p>
               <p>
-                Empresa tal
+                Directora de Catapulta
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Elizabeth_Becerril.png">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Elizabeth Becerril
               </p>
               <p>
-                Empresa tal
+                Regional Manager Latam, Techstars
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Eduardo_Hernandez.jpg">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Eduardo Hernández
               </p>
               <p>
-                Empresa tal
+                Hackers & Founders
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Erik_Cruz.jpg">
             </div>
             <div class="organizer-box-item-info">
               <p>
                 Erik Almaraz
               </p>
               <p>
-                Empresa tal
+                Leader frontend
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Eli_Shalem.jpg">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Eli Shalem
               </p>
               <p>
-                Empresa tal
+                Catapulta
               </p>
             </div>
         </div>
         <div class="organizer-box-item">
             <div class="organizer-box-item-img">
-                <img src="https://instagram.fmex11-2.fna.fbcdn.net/vp/19ce16df2791f9f24469090aab7cc08a/5C0E0A87/t51.2885-15/e35/31512301_204516050157382_4907510257535680512_n.jpg">
+                <img src="./-img/organizadores/Ft_Anahi_Flores.JPG">
             </div>
             <div class="organizer-box-item-info">
               <p>
-                Erik Almaraz
+                Anahí Flores
               </p>
               <p>
-                Empresa tal
+                Program Manager, Ironhack
               </p>
             </div>
         </div>
 
+        <div class="organizer-box-item">
+            <div class="organizer-box-item-img">
+                <img src="./-img/organizadores/Ft_Raymundo_Banos.png">
+            </div>
+            <div class="organizer-box-item-info">
+              <p>
+                Raymundo Baños
+              </p>
+              <p>
+                Owner en ImpreZona
+              </p>
+            </div>
+        </div>
+        <div class="organizer-box-item">
+            <div class="organizer-box-item-img">
+                <img src="./-img/organizadores/Ft_Alex_Santana.jpg">
+            </div>
+            <div class="organizer-box-item-info">
+              <p>
+                Alex Santana
+              </p>
+              <p>
+                COO, 1puntocinco
+              </p>
+            </div>
+        </div>
+        <div class="organizer-box-item">
+            <div class="organizer-box-item-img">
+                <img src="./-img/organizadores/Ft_Wendy_Ramirez.png">
+            </div>
+            <div class="organizer-box-item-info">
+              <p>
+                Wendy Ramírez
+              </p>
+              <p>
+                Facilitadora, Stratup Weekend 
+              </p>
+            </div>
+        </div>
     </div>
   </section>
 
