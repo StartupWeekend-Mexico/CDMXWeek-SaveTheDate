@@ -598,7 +598,7 @@ nav ul li.active{
 
 @media only screen and (min-width: 321px) {
   .logo {
-    height: 66px;
+    height: 60px;
     margin: 5px auto 0;
     padding-left: 0;
   }
@@ -623,6 +623,15 @@ nav ul li.active{
   }
   .container {
     width: 95%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav .brand-logo{
+    left: 60%;
+  }
+  nav .button-collapse{
+    left: -25%;
   }
 }
 
