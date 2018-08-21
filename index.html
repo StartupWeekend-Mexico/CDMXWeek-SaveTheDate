@@ -50,20 +50,21 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li class="active"><a href="#">Week</a></li>
-          <li class=""><a href="#">Temáticas</a></li>
-          <li class=""><a href="#">Comunidades</a></li>
-          <li class=""><a href="#">Contacto</a></li>
+          <li class=""><a href="#categorias">10 Categorías</a></li>
+          <li class=""><a href="#comunidades">Comunidades</a></li>
+          <li class=""><a href="#">Patrocinadores</a></li>
+          <li class="btn-white"><a href="#">Eventos</a></li>
         </ul>
         <ul class="side-nav black" id="mobile-demo">
           <a class="right red-text" onclick="$('.button-collapse').sideNav('hide');" href="#"><i class="material-icons">close</i></a>
           <li class=""><img border="0" alt="SW-Week" src="./-img/Mexico_city_white_2_xxs.png" class="side-nav-logo"></li>
           <li class="active"><a href="#">Week</a></li>
           <div class="divider grey darken-4"></div>
-          <li class=""><a href="#">10 categorias</a></li>
+          <li class=""><a href="#categorias">10 categorias</a></li>
           <div class="divider grey darken-4"></div>
-          <li class=""><a href="#">Comunidades y sedes</a></li>
+          <li class=""><a href="#comunidades">Comunidades</a></li>
           <div class="divider grey darken-4"></div>
-          <li class=""><a href="#">Patrocinadores y organizadores</a></li>
+          <li class=""><a href="#">Patrocinadores</a></li>
           <div class="divider grey darken-4"></div>
           <div class="divider grey darken-4"></div>
           <li class=""><a href="#">Eventos</a></li>
@@ -97,7 +98,7 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
 
   </header>
 
-  <section id="categorias" class="grey lighten-4">
+  <section id="categorias" class="grey lighten-4 scrollspy">
     <div class="center-align section-title container">
       <h3>10 Categorías</h3>
       <p>Un evento de una semana, diseñado para conectar a las personas que conforman y tienen interés en <br/> ser parte del emprendimiento de base tecnológica en Ciudad de México.</p>
@@ -424,7 +425,7 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
       </div>
     </div>
   </section>
-  <section id="comunidades">
+  <section id="comunidades" class="scrollspy">
     <div class="center-align section-title container">
       <h3>Comunidades y Sedes</h3>
       <p>Un evento de comunidad para comunidades, si eres parte de una comunidad o quieres sumarte a la red <br/> de coworkings que nos ayudaran a hacer realidad este mega evento solo contacta por Facebook y te daremos seguimiento.</p>
@@ -787,6 +788,7 @@ Startup Week es una semana con actividades de las comunidades de emprendimiento 
       $('.slider').slider();
       $(".button-collapse").sideNav();
       $('.modal').modal();
+      $('.scrollspy').scrollSpy();
       // Set the date we're counting down to
       var countDownDate = new Date("Sep 3, 2018 9:00:00").getTime();
 
