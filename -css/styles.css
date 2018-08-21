@@ -256,16 +256,24 @@ footer {
 }
 
 .banner-strip {
-  padding-top: 50px;
+  /*padding-top: 25px;*/
   color: white;
   text-align: left;
   padding-left: 5%;
-  width: 65%;
+}
+
+.banner-strip h3{
+  font-size: 24px;
 }
 
 .pre-register-wrapper{
-  width: 31%;
-  vertical-align: top;
+  width: 50%;
+  /*vertical-align: top;*/
+}
+
+.pre-register-wrapper img{
+  width: 100%;
+  margin-left: 50%;
 }
 
 .pre-register-box{
@@ -358,13 +366,20 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .banner-strip-counter{
   background: #fff;
   color: #f57e38;
-  width: 280px;
+  width: 240px;
   margin-top: 33px;
-  top: 56px;
-  margin-left: -8px;
-  padding: 0;
+  /*top: 56px;
+  margin-left: -8px;*/
+  padding: 10px;
   border-radius: 35px;
   position: relative;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .banner-strip-counter{
+    margin-left: 40px;
+  }
 }
 
 .banner-strip-counter h3{
@@ -379,10 +394,11 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   color: #000;
 }
 
-.banner-strip-counter p{
+.banner-strip-counter a{
     font-size: 21px;
     margin: 5px;
     margin-top: -110px;
+    color: #2a3842;
 }
 .banner-strip-counter p:nth-child(1){
   color: #000;
@@ -447,7 +463,7 @@ nav ul li.active{
 }
 
 .organizer-box-item{
-    width: 13%;
+    /*width: 13%;*/
     background: #fff;
     box-shadow: 0 0 20px 0 rgba(212, 212, 212, 0.31);
     text-align: center;
@@ -470,6 +486,12 @@ nav ul li.active{
     display: inline-block;
     margin: 10px;
     vertical-align: -webkit-baseline-middle;
+}
+
+@media (max-width: 500px) {
+  .communities-first-wrapper, .communities-second-wrapper, .communities-third-wrapper{
+    width: inherit;
+  }
 }
 
 #categorias .card .card-image img{
@@ -495,7 +517,7 @@ nav ul li.active{
 
 #categorias .card-action {
   text-align: left;
-  width: 260px;
+  width: 100%;
   height: 24px;
   font-family: 'Montserrat';
   padding-left: 14px;
@@ -704,4 +726,8 @@ nav ul li.active{
     max-width: 2400px;
     width: 100%;
   }
+}
+#thanks{
+  margin-top: 30px;
+  text-align: center;
 }
