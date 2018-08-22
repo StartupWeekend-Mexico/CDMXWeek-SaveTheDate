@@ -7,11 +7,12 @@
 }
 
 .logo-frame {
-  height: 160px;
+    display: block;
+    height: 180px;
   /* equals max image height */
-  white-space: nowrap;
+    white-space:nowrap;
   /* this is required unless you put the helper span closely near the img */
-  padding: 20px !important;
+  padding: 30px !important;
 }
 
 .logo-helper {
@@ -740,3 +741,10 @@ nav ul li.active {
   margin-top: 30px;
   text-align: center;
 }
+.logo-frame.principal {
+    
+    height: 300px;
+    width: 300px;
+}
+
+
