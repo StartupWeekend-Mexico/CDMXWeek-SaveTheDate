@@ -754,3 +754,10 @@ nav ul li.active {
 }
 
 
+
+.card {
+    border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px 0 rgba(42, 56, 66, 0.17);
+
+}
