@@ -74,7 +74,7 @@
                                 <p>Startup Week es una semana con actividades de las comunidades de emprendimiento y tecnología en CDMX.
                                 </p>
                             </div>
-                            <div class="banner-strip-counter"><a href="https://techstarsstartupweekmexicoc2018.sched.com/" target="blank">Inscribete al evento</a></div>
+                            <div class="banner-strip-counter"><a href="https://techstarsstartupweekmexicoc2018.sched.com/" target="blank">Inscríbete al evento</a></div>
                         </div>
                     </div>
                     <div class="col s12 m6 hide-on-small-only">
@@ -793,74 +793,143 @@
             </div>
         </div>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <script src="-js/_main-dist.js"></script>
+
     <script>
         var jsonCategorias;
+
         $.getJSON("categorias.json", function(json) {
+
             jsonCategorias = json;
+
         });
+
         function showModal(categoria) {
+
             console.log(categoria);
+
             var desc = jsonCategorias[categoria].desc;
+
             console.log(desc);
+
             document.getElementById("modal-title").innerHTML = jsonCategorias[categoria].titulo;
+
             document.getElementById("modal-desc").innerHTML = jsonCategorias[categoria].desc;
+
             $("#modal-image").attr("src", jsonCategorias[categoria].img);
+
             document.getElementById("modal-card").classList.remove("horizontal");
+
             if ($(document).width() >= 1000) {
+
                 document.getElementById("modal-card").classList.add("horizontal");
+
             }
+
             $('#modal').modal('open');
+
         }
+
         $(document).ready(function() {
+
             $('.materialboxed').materialbox();
+
             $('.slider').slider();
+
             $(".button-collapse").sideNav();
+
             $('.modal').modal();
+
             $('.scrollspy').scrollSpy();
+
             // Set the date we're counting down to
+
             var countDownDate = new Date("Sep 3, 2018 9:00:00").getTime();
+
             function countDown() {
+
                 // Get todays date and time
+
                 var now = new Date().getTime();
+
                 // Find the distance between now an the count down date
+
                 var distance = countDownDate - now
+
                 // Time calculations for days, hours, minutes and seconds
+
                 var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
                 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
                 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
                 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
                 // Display the result in the element with id="demo"
+
                 document.getElementById("counter").innerHTML = days + "d " + hours + "h " +
+
                     minutes + "m " + seconds + "s ";
+
                 // If the count down is finished, write some text
+
                 if (distance < 0) {
+
                     clearInterval(x);
+
                     document.getElementById("count").innerHTML = "El evento";
+
                 }
+
             }
+
             // Update the count down every 1 second
+
             countDown();
+
             var x = setInterval(countDown, 1000);
+
             window.fbAsyncInit = function() {
+
                 FB.init({
+
                     appId: "APP_ID",
+
                     xfbml: true,
+
                     version: "v2.6"
+
                 });
+
             };
+
             (function(d, s, id) {
+
                 var js, fjs = d.getElementsByTagName(s)[0];
+
                 if (d.getElementById(id)) {
+
                     return;
+
                 }
+
                 js = d.createElement(s);
+
                 js.id = id;
+
                 js.src = "https://connect.facebook.net/en_US/sdk.js";
+
                 fjs.parentNode.insertBefore(js, fjs);
+
             }(document, 'script', 'facebook-jssdk'));
         });
     </script>
     <!--Import jQuery before materialize.js-->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
 </body>
+
 </html>
