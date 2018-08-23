@@ -92,7 +92,7 @@
 }
 
 #mobile-demo {
-  background-image: url("../-img/bg-menu.png");
+  background-image: url("../-img/-menu/bg-menu.png");
   background-repeat: no-repeat;
   background-position: top left;
   background-size: contain;
@@ -156,7 +156,7 @@
 
 .banner {
   background-color: #f57c00;
-  background-image: url("../-img/ciudad-CDMX.png");
+  background-image: url("../-img/-banner/ciudad-CDMX.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 155%;
@@ -222,7 +222,7 @@ footer {
   padding-top: 40px;
   color: white;
   height: 950px;
-  background-image: url("../-img/ciudad-CDMX-dark.png");
+  background-image: url("../-img/-banner/ciudad-CDMX-dark.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
