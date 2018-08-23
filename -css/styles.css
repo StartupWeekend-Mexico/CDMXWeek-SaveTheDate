@@ -57,6 +57,9 @@
 
 .categoria-title {
   cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .img-special {
@@ -512,7 +515,7 @@ nav ul li.active {
 
 .communities-card-desc {
   padding: 14px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
