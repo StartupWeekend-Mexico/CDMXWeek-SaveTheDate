@@ -100,7 +100,7 @@
                             <img src="./-img/-categorias/isla-emprendimiento.png">
                         </div>
                         <div class="card-action center-align">
-                            <a class="categoria-title" onclick="showModal('Emprendimiento101')">Emprendimiento 101</a>
+                            <p class="categoria-title">Emprendimiento 101</p>
                         </div>
                         <div class="communities-card-desc">
                             Aquí encontrarás contenido que necesitas para poder aventarte a emprender, inspírate y aprende de gente que la está armando en grande con sus proyectos.
@@ -133,7 +133,7 @@
                             <img src="./-img/-categorias/isla-fintech.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Fintech')" class="categoria-title">Fintech</a>
+                            <p class="categoria-title">Fintech</p>
                         </div>
                         <div class="communities-card-desc">
                             Interactúa con la gente que ha revolucionado los servicios financieros en México. Todavía falta mucho por hacer, es tu turno.
@@ -166,7 +166,7 @@
                             <img src="./-img/-categorias/isla-games.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Videojuegos')" class="categoria-title">Videojuegos/VR</a>
+                            <p class="categoria-title">Videojuegos/VR</p>
                         </div>
                         <div class="communities-card-desc">
                             Aprende de las novedades en la creación de videojuegos y los alcances de la realidad virtual para múltiples aplicaciones además del entretenimiento.
@@ -201,7 +201,7 @@
                             <img src="./-img/-categorias/isla-inversion.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Inversion')" class="categoria-title">Inteligencia artificial</a>
+                            <p class="categoria-title">Inteligencia artificial</p>
                         </div>
                         <div class="communities-card-desc">
                             Si no tienes ni idea de que se trata, no eres el único. Ven y descubre por qué tanto alboroto, qué es y qué aplicaciones tiene esta tecnología.
@@ -234,7 +234,7 @@
                             <img src="./-img/-categorias/isla-inversion.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Inversion')" class="categoria-title">Legal e Inversión</a>
+                            <p class="categoria-title">Legal e Inversión</p>
                         </div>
                         <div class="communities-card-desc">
                             Para enamorar a los inversionistas debes saber de temas como evaluación de una startup, figuras legales y las diferentes etapas de levantamiento de capital.
@@ -267,7 +267,7 @@
                             <img src="./-img/-categorias/isla-uxui.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('UX/UI')" class="categoria-title">UX/UI</a>
+                            <a onclickp class="categoria-title">UX/UI</p>
                         </div>
                         <div class="communities-card-desc">
                             La construcción de cualquier producto, debe tener como enfoque principal la perspectiva del usuario, sobre todo en ambientes digitales.
@@ -300,7 +300,7 @@
                             <img src="./-img/-categorias/thumbnail.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('IoT')" class="categoria-title">Makers/IoT</a>
+                            <p class="categoria-title">Makers/IoT</p>
                         </div>
                         <div class="communities-card-desc">
                             Aquí se trata de crear tecnología hasta donde la imaginación te lo permita y lograr que los objetos cobren vida a través de la conectividad.
@@ -335,7 +335,7 @@
                             <img src="./-img/-categorias/isla-tecnologia.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Tecnologia')" class="categoria-title">Coding</a>
+                            <p class="categoria-title">Coding</p>
                         </div>
                         <div class="communities-card-desc">
                             Tu también puedes aprender a programar, entérate sobre nuevas tecnologías, buenas prácticas y los usos de distintos lenguajes de programación.
@@ -368,7 +368,7 @@
                             <img src="./-img/-categorias/isla-social.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Social')" class="categoria-title">Innovación Social</a>
+                            <p class="categoria-title">Innovación Social</p>
                         </div>
                         <div class="communities-card-desc">
                             Descúbre cómo se pueden crear soluciones rentables que resuelvan los grandes problemas globales a través de modelos de alto impacto.
@@ -401,7 +401,7 @@
                             <img src="./-img/-categorias/isla-health.png">
                         </div>
                         <div class="card-action center-align">
-                            <a onclick="showModal('Health')" class="categoria-title">Health</a>
+                            <p class="categoria-title">Health</p>
                         </div>
                         <div class="communities-card-desc">
                             En esta vertical se explorará la innovación en el campo de la salud y la investigación.
@@ -815,23 +815,23 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="-js/_main-dist.js"></script>
     <script>
-        var jsonCategorias;
-        $.getJSON("categorias.json", function(json) {
-            jsonCategorias = json;
-        });
-        function showModal(categoria) {
-            console.log(categoria);
-            var desc = jsonCategorias[categoria].desc;
-            console.log(desc);
-            document.getElementById("modal-title").innerHTML = jsonCategorias[categoria].titulo;
-            document.getElementById("modal-desc").innerHTML = jsonCategorias[categoria].desc;
-            $("#modal-image").attr("src", jsonCategorias[categoria].img);
-            document.getElementById("modal-card").classList.remove("horizontal");
-            if ($(document).width() >= 1000) {
-                document.getElementById("modal-card").classList.add("horizontal");
-            }
-            $('#modal').modal('open');
-        }
+        // var jsonCategorias;
+        // $.getJSON("categorias.json", function(json) {
+        //     jsonCategorias = json;
+        // });
+        // function showModal(categoria) {
+        //     console.log(categoria);
+        //     var desc = jsonCategorias[categoria].desc;
+        //     console.log(desc);
+        //     document.getElementById("modal-title").innerHTML = jsonCategorias[categoria].titulo;
+        //     document.getElementById("modal-desc").innerHTML = jsonCategorias[categoria].desc;
+        //     $("#modal-image").attr("src", jsonCategorias[categoria].img);
+        //     document.getElementById("modal-card").classList.remove("horizontal");
+        //     if ($(document).width() >= 1000) {
+        //         document.getElementById("modal-card").classList.add("horizontal");
+        //     }
+        //     $('#modal').modal('open');
+        // }
         $(document).ready(function() {
             $('.materialboxed').materialbox();
             $('.slider').slider();
