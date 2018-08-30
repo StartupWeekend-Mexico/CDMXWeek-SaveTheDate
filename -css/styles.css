@@ -15,6 +15,18 @@
   padding: 30px !important;
 }
 
+.logo-frame.principal.startegy img{
+   width: 95px;
+}
+
+.logo-frame.principal.ebc img{
+   width: 317px;
+}
+
+.logo-frame.principal.sticker img{
+   width: 146px;
+}
+
 .logo-helper {
   display: inline-block;
   height: 100%;
@@ -162,7 +174,7 @@
 
 .banner {
   background-color: #f57c00;
-  background-image: url("../-img/-banner/ciudad-CDMX.png");
+  background-image: url("../-img/-banner/ciudad-cdmx.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 155%;
@@ -380,6 +392,12 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
   text-align: center;
 }
 
+.organizer-box-item .social-networks-organizer img{
+  width: 26px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
 @media (max-width: 500px) {
   .banner-strip-counter {
     margin-left: 40px;
@@ -478,6 +496,7 @@ nav ul li.active {
   margin: 8px 11px;
   display: inline-block;
   min-height: 219px;
+  min-height: 260px;
   vertical-align: top;
   border-radius: 93px;
   max-width: 130px;
